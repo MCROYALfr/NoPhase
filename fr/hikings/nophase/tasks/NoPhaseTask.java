@@ -40,7 +40,7 @@ public final class NoPhaseTask implements Runnable {
 				continue;
 			}
 
-			player.teleport(previous);
+			player.teleport(previous, TeleportCause.UNKNOWN);
 			user.setTeleported(false);
 		}
 	}
